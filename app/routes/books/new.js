@@ -8,11 +8,6 @@ export default Ember.Route.extend({
     controller.set('book', model);
   },
   actions: {
-    createBook: function(book) {
-      var _this = this;
-      this.store.createRecord('book', book).save().then(function(book) {
-        _this.transitionTo('books.book', book);
-      })
-    }
+
   }
 });

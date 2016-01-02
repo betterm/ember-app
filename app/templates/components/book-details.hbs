@@ -2,3 +2,7 @@
 <div>
   {{book.description}}
 </div>
+<div>
+  {{#link-to 'books.edit' book class="btn btn-success"}} Edit Book {{/link-to}}
+  <a hred="" class="btn btn-danger" {{action 'deleteBook'}}>Delete Book</a>
+</div>
