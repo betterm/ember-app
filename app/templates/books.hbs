@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      {{#link-to 'books.new' class="btn btn-primary btn-block"}}Add new book{{/link-to}}
+      {{books-list books=books}}
+    </div>
+    <div class="col-sm-8">
+      {{outlet}}
+    </div>
+  </div>
+</div>
